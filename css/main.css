@@ -2,6 +2,7 @@ head{
 	padding: 2px;
 	margin: 5px;
 }
+
 #header{
 	width: 150px;
 	padding: 0px;
@@ -47,15 +48,16 @@ body{
 *{
 	margin: 0;
 }
-#contenidoprincipal {
+.contenidoprincipal {
 	height: 80%;
+}
+.grande{
+	font-size: 3em;
 }
 .piedepagina {
 	height: 50px;
 	margin-top: -50px;
-}
-.grande{
-	font-size: 3em;
+	text-align: center;
 }
 .inline-block{
 	float: none;
@@ -74,12 +76,31 @@ body{
 .no-lista li{
 list-style-type: none;
 }
+.contact {
+	margin-top: 50px;
+	text-align: center;
+}
 .se-gris{
 	background-color: #eee;
 }
 .nosotros {
-	margin-top: 50px;
+	margin-top: 150px;
 	text-align: center;
+}
+.google-maps {
+	position: relative;
+	padding-bottom: 40%;
+	height: 0;
+	overflow: hidden;
+	margin: auto;
+	text-align: center;
+}
+.google-maps iframe {
+	position: absolute;
+	top: 30px;
+	width: 50% !important;
+	height: 50% !important;
+	margin-right: 300px;
 }
 .padding-largo{
 	padding: 5px 10px;
@@ -104,4 +125,10 @@ list-style-type: none;
 	-webkit-animation-delay: 3s;
 	-moz-animation-delay: 3s;
 	animation-delay: 3s;
+}
+@media (max-width: 768px) {
+	.nosotros {
+		max-width: 70%
+		margin-top: 50px;
+	}
 }

@@ -3,28 +3,23 @@ body {
 	font-family: 'Ubuntu', sans-serif;
 	font-family: 'Open Sans', sans-serif;
 }
-
 header {
 	width: 100%;
 	background: #fff;
 }
-
 #btn-menu {
 	display: none;
 }
-
 header label {
 	display: none;
 	width: 45px;
 	height: 45px;
-	height: 45px;
 	padding: 10px;
 }
-
 header label:hover {
 	cursor: pointer;
 }
-.menu ul {http://localhost/musuainv/images/lines.png
+.menu ul {
 	margin: 0;
 	list-style: none;
 	padding: 0;
@@ -46,11 +41,31 @@ header label:hover {
 .menu li ul {
 	display: none;
 	position: absolute;
-	min-width: 45px;
+	min-width: 150px;
 	text-align: center;
 }
 .menu li:hover > ul {
 	display: block;
+}
+.menus ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	background-color: #E2ECEE;	
+}
+.menus li {
+	text-align: center;
+	flex-grow: 1;
+}
+.menus li:hover {
+	background: rgba(0,0,0,0.2);
+}
+.menus li a{
+	display: block;
+	padding: 12px 15px;
+	color: #193441;
+	text-decoration: none;
 }
 @media (max-width: 768px) {
 	header label {
